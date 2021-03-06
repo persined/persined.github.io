@@ -371,7 +371,7 @@ nav > ul li a:active {
 } 
 
 .appStore {
-	height: 75px;
+	height: 50px;
 }
 
 
@@ -380,7 +380,6 @@ nav > ul li a:active {
 
 .iphonePreview {
 	grid-area: p;
-	background-image: url($device-color);
 	background-size: 400px auto;
 	background-repeat: no-repeat;
 	margin-top: 68px;
@@ -388,8 +387,6 @@ nav > ul li a:active {
 
 .iphoneScreen {
 	width: 349px;
-	-webkit-clip-path: url(#screenMask);
-	clip-path: url(#screenMask);
 	margin-left: 26px;
 	margin-top: 23px;
 }
@@ -397,8 +394,6 @@ nav > ul li a:active {
 .videoContainer {
 	width: 349px;
 	height: 755px;
-	-webkit-clip-path: url(#screenMask);
-	clip-path: url(#screenMask);
 	margin-left: 26px;
 	margin-top: 23px;
 }
