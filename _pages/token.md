@@ -14,7 +14,7 @@ You can **only** send or receive at most one (1) Pkmn Yellow per transaction! We
 
 No presale! This is a fully decentralized and community driven project! The entire supply is allocated to Pancakeswap. LP tokens are burned and liquidity is locked forever.
 
-The dev account does hold 5 Pkmn Yellow tokens. These will be given away to the community to kickstart and celebrate launch!
+The dev account does hold ten (10) Pkmn Yellow tokens. These will be given away to the community to kickstart and celebrate launch!
 
 # Airdrop
 
