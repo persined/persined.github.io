@@ -1,0 +1,29 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+<div id="pkmn-container">
+    {% for i in (0..14) %}
+    <div class="pkmn-table">
+        {% for j in (1...10) %}
+            {% assign row = i | times: 10 %}        
+            {% assign pkmn = row | plus: j %}
+            <div class="pkmn-tile" data-num="{{pkmn}}" >
+                <img width="96" height="96" class="pkmn-sprite" src="/assets/pkmn/{{ pkmn }}.png">
+            </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>
+<script>
+    $(function() {
+        $(".pkmn-tile").on('click', function(event) {
+            let pkmn = $(this).attr('data-num');
+            let audioElement = document.createElement('audio');
+            
+            audioElement.setAttribute('src', 'https://pokemoncries.com/cries-old/'+pkmn+'.mp3');
+            audioElement.volume = 0.2;
+            audioElement.play();
+        });
+    });
+</script>
+<br />

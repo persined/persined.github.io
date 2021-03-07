@@ -17,7 +17,7 @@
 
 .headerBackground {
 	height: 115px;
-	background-color: rgba($header-color, $header-transparency);
+	background-color: rgba($header-color, 0.8);
 }
 
 @media only screen and (max-width: 768px) {
@@ -29,7 +29,7 @@
 }
 
 .subPageHeaderBackground {
-	background-color: #fff;
+	background-color: #000000c0;
 }
 
 .container {					// Set up the container for the site content
@@ -39,7 +39,7 @@
 	padding-left: 15px;
 	padding-right: 15px;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: 115px 876px auto auto;
+	grid-template-rows: 115px 720px auto auto;
 	grid-column-gap: 30px;
 	grid-template-areas: 
 		"h h h h h h h h h h h h"
@@ -50,7 +50,6 @@
 
 .subPageContainer {
 	grid-template-rows: 115px auto auto auto;
-	background-color: #fff;
 }
 
 @media only screen and (max-width: 768px) {
@@ -225,17 +224,17 @@ nav > ul li a:active {
 
 // Sub Page Header Styling
 .subPageHeaderBackground .logo > p {
-	color: #000;
+	color: #fff;
 }
 
 .subPageHeaderBackground nav > ul li a:link,
 .subPageHeaderBackground nav > ul li a:visited {
-	color: rgba(#000, 0.6);
+	color: rgba(#fff, 0.6);
 }
 
 .subPageHeaderBackground nav > ul li a:hover,
 .subPageHeaderBackground nav > ul li a:active {
-	color: rgba(#000, 1);
+	color: rgba(#fff, 1);
 }
 
 
@@ -474,7 +473,6 @@ nav > ul li a:active {
 	justify-content: flex-start;
 	flex-grow: 1;
 	flex-wrap: wrap;
-	margin-top: 93px;
 }
 
 .feature {
@@ -528,7 +526,6 @@ nav > ul li a:active {
 }
 
 @media only screen and (max-width: 992px) {
-
 	.features {
 		flex-grow: 1;
 		flex-direction: row;
